@@ -1,0 +1,13 @@
+openapi: 3.0.3
+info:
+  title: Example
+  version: 1.0.0
+paths:
+  /example:
+    post:
+      operationId: example
+      requestBody:
+        $ref: 'openapi_components.yaml#/components/requestBodies/request_foo'
+      responses:
+        204:
+          $ref: 'openapi_components.yaml#/components/responses/response_empty'

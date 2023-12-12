@@ -1,0 +1,13 @@
+package: service
+generate:
+  models: true
+  client: true
+  echo-server: true
+  embedded-spec: true
+import-mapping:
+  openapi_components.yaml: "testmodule/model"
+output: service/service.gen.go
+output-options:
+  skip-prune: true
+compatibility:
+  circular-reference-limit: 100

@@ -1,0 +1,16 @@
+components:
+  schemas:
+    foo_data:
+      type: object
+      properties:
+        bar:
+          type: string
+  responses:
+    response_empty:
+      description: Empty response
+  requestBodies:
+    request_foo:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/foo_data'

@@ -1,0 +1,9 @@
+package: model
+generate:
+  models: true
+  embedded-spec: true
+output: model/model.gen.go
+output-options:
+  skip-prune: true
+compatibility:
+  circular-reference-limit: 100
